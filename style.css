@@ -1,12 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
 header img{
     height: 45px;
 }
-#vietnam img{
+
+main {
+    background-color: #fff5de; 
+
+}
+
+section{
+    padding: 20px;
+}
+
+#vietnam img, #aussie img {
     height: 300px;
 }
-#aussie img{
-    height: 300px;
+
+figure {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-#canada img{
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+#canada img {
     height: 320px;
+}
+
+#vietnam figure, #canada figure {
+    flex-direction: row-reverse;
 }
