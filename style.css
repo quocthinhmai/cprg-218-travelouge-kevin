@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: "Golos Text", serif;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    background-color: white;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
 }
 
 nav ul{
@@ -17,11 +19,20 @@ nav ul{
     justify-content: right;
     list-style: none;
     gap: 1rem;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav a:hover{
+    color: rgb(255, 255, 255);
+    border-radius:.5rem;
+    background-color: #D8A428;
+    padding: 15px;
 }
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: rgb(219, 166, 75);
 }
 
 header img{
@@ -29,16 +40,35 @@ header img{
 }
 
 main {
-    background-color: #fff5de; 
+    background-color: #fffaee; 
+}
 
+#hero{
+    background: url(/Images/Sunflower.jpg);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px #333 ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Josefin Sans", serif;
+    font-weight: 900;
 }
 
 section{
-    padding: 20px;
+    padding: 20px 100px 20px 100px;
 }
 
 #vietnam img, #aussie img {
-    height: 300px;
+    height: 500px;
+    box-shadow: 3px 3px 3px #333 ;
 }
 
 figure {
@@ -53,9 +83,21 @@ figcaption {
 }
 
 #canada img {
-    height: 320px;
+    height: 520px;
+    box-shadow: 3px 3px 3px #333 ;
 }
 
 #vietnam figure, #canada figure {
     flex-direction: row-reverse;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin-top: auto;
+    padding: 20px;
+}
+.footer img{
+    height: 25px;
 }
