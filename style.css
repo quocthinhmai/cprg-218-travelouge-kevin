@@ -44,7 +44,7 @@ main {
 }
 
 #hero{
-    background: url(/Images/Sunflower.jpg);
+    background: url(./Images/Sunflower.jpg);
     background-size: cover;
     height: 500px;
     text-align: center;
